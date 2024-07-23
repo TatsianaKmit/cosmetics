@@ -1,0 +1,226 @@
+@use '../base/variables';
+@use '../base/mixines';
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// header
+
+.header {
+    &__wrapper {
+        background-color: variables.$semanticBlocksColorWhite;
+        height: 100px;
+        font-size: 1.8em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 80px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__nav {
+        text-align: end;
+
+        &-close {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+
+    &__links {
+        position: relative;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        letter-spacing: 1px;
+        font-size: 24px;
+    }
+
+    &__icons {
+        width: 40px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+    }
+
+    &__overlay {
+        z-index: 8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        opacity: .75;
+    }
+}
+
+// search
+
+.search {
+    display: flex;
+    max-height: 28px;
+    flex-grow: 0.8;
+
+    &__open {
+        max-height: 40px;
+        cursor: pointer;
+    }
+
+    &__close {
+        cursor: pointer;
+    }
+}
+
+// footer
+
+.footer {
+    margin-top: auto;
+
+    &__wrapper {
+        margin-top: auto;
+        background-color: variables.$semanticBlocksColorWhite;
+        display: grid;
+        grid-template-columns: 1.5fr repeat(3, 1fr);
+        font-size: 1rem;
+        padding: 40px 0;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 300px;
+        align-content: stretch;
+        flex-wrap: wrap;
+
+        >p {
+            color: variables.$linkColorLightGray;
+        }
+    }
+
+    &__photo {
+        max-height: 40px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__links {
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        >h6 {
+            color: variables.$linkColorLightGray;
+            font-size: 1.05rem;
+            margin: 5px 0;
+        }
+    }
+
+    &__link {
+        margin: 4px 0;
+    }
+
+    &__icons {
+        width: 100%;
+        padding-top: 2px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// titles, text, links
+
+h2 {
+    @include mixines.headerFont();
+    color: variables.$headerColorBlack;
+    font-size: 2.5rem;
+    line-height: 40px;
+
+    .line-break {
+        display: block;
+    }
+}
+
+h4,
+h6 {
+    @include mixines.mainFont();
+    color: variables.$headerColorDarkPink;
+    margin: 10px 0;
+}
+
+p {
+    @include mixines.mainFont();
+    font-weight: 300;
+}
+
+a {
+    @include mixines.mainFont();
+    font-weight: 300;
+    color: variables.$linkColorLightGray;
+}
+
+// sliders
+
+.slider {
+    &-tags {
+        margin: 40px 0px;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 3px;
+        }
+
+        &__photo {
+            height: 130px;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+
+    &-brands {
+        margin: 80px 0px;
+
+        &__photo {
+            @extend .slider-tags__photo;
+        }
+    }
+}
+
+// spinners
+
+.spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
