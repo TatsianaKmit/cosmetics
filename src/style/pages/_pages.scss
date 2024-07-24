@@ -28,7 +28,7 @@
 }
 
 .lipstick {
-    background: url('../../../public/assets/landing.jpg') center (center/cover) no-repeat;
+    background: url(#{variables.$background-landing}) center (center/cover) no-repeat;
     min-height: 600px;
     display: flex;
     align-items: center;

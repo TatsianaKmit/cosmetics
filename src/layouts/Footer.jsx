@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Telegram, LinkedIn, GitHub } from '../icons/index';
+import logo_lipstick from '../assets/logo_lipstick.PNG';
+import logo_icon from '../assets/logo_icon.PNG'
 
 export default function Footer() {
+    const today = new Date();
+    const year = today.getFullYear();
+
     return (
         <div className="container-slim">
             <div className="footer__wrapper">
@@ -10,13 +15,13 @@ export default function Footer() {
                     <div className="footer__photo">
                         <Link to={"/"}>
                             <picture>
-                                <source media="(max-width: 768px)" srcSet='./assets/logo_lipstick.png' />
-                                <source media="(min-width: 767px)" srcSet='./assets/logo_icon.png' />
-                                <img src='./assets/logo_icon.png' />
+                                <source media="(max-width: 768px)" srcSet={logo_lipstick} alt="logo" />
+                                <source media="(min-width: 767px)" srcSet={logo_icon} alt="logo" />
+                                <img src={logo_icon} alt="logo" />
                             </picture>
                         </Link>
                     </div>
-                    <p>© 2024 cosmetics, Inc.
+                    <p>© {year} cosmetics, Inc.
                         <br />
                         All rights reserved.</p>
                 </div>

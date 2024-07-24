@@ -40,7 +40,7 @@ export default function ProductsList(props) {
                                             <Link to={`/product/${detail.id}`}>
                                                 <p>{detail.name}</p>
                                                 <p>{detail.brand}</p>
-                                                <p>{`$${detail.price}`}</p>
+                                                <p>{`$${detail.price !== null ? detail.price : 0}`}</p>
                                             </Link>
                                         </div>
                                     </div>

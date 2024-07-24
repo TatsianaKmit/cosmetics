@@ -1,4 +1,5 @@
 import React from 'react';
+import about from '../assets/about.jpg';
 
 export default function AboutPage() {
     return (
@@ -28,7 +29,7 @@ export default function AboutPage() {
                     </div>
 
                     <div className='about-page__photo'>
-                        <img src='./assets/about.jpg' />
+                        <img src={about} alt="about" />
                     </div>
 
                     <div className='about-page__statistics'>

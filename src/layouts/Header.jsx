@@ -4,6 +4,9 @@ import { Magnifier, Bars, Xmark } from '@gravity-ui/icons';
 import { Button, TextInput } from '@gravity-ui/uikit';
 import { useSearchContext } from '../context/context'
 import useSearch from "../hooks/useSearch";
+import logo_lipstick from '../assets/logo_lipstick.PNG';
+import logo_icon from '../assets/logo_icon.PNG';
+import logo from '../assets/logo.PNG';
 
 export default function Header() {
     const { isSearchVisible, toggleSearchVisibility, handleSearchValue, searchValue } = useSearchContext()
@@ -17,9 +20,9 @@ export default function Header() {
                     <div className="header__logo">
                         <NavLink to={"/"} >
                             <picture>
-                                <source media="(max-width: 576px)" srcSet='./assets/logo_lipstick.png' />
-                                <source media="(max-width: 992px)" srcSet='./assets/logo_icon.png' />
-                                <img src='./assets/logo.png' alt="logo" />
+                                <source media="(max-width: 576px)" srcSet={logo_lipstick} alt="logo" />
+                                <source media="(max-width: 992px)" srcSet={logo_icon} alt="logo" />
+                                <img src={logo} alt="logo" />
                             </picture>
                         </NavLink>
                     </div>

@@ -96,7 +96,7 @@ export default function ProductItem() {
 
                         <div className="item-page__price">
                             <Button>
-                                {`$ ${details.price}`}
+                                {`$${details.price !== null ? details.price : 0}`}
                             </Button>
                         </div>
 

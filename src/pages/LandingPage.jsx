@@ -1,6 +1,10 @@
 import React from "react";
 import MultipleItems from "../components/slider/SliderComponent";
 import { Link } from "react-router-dom";
+import powder from '../assets/powder.jpg';
+import both from '../assets/Both.png';
+import girl from '../assets/girl.jpg';
+import lipstick from '../assets/lipstick.png';
 
 export default function LandingPage() {
 
@@ -47,7 +51,7 @@ export default function LandingPage() {
                                     <p>Discover Your Signature Look with Our Expansive Makeup Collection. From bold lipsticks to flawless foundations, we have everything you need to elevate your beauty game</p>
                                 </div>
                                 <div className="powder__photo">
-                                    <img src='assets/powder.jpg' />
+                                    <img src={powder} alt="powder" />
                                 </div>
                                 <div className="powder__button">
                                     <Link to={"/catalog"}>
@@ -70,7 +74,7 @@ export default function LandingPage() {
                                     <h2>Enhance Your <span className="line-break"> </span><span className="line-break">Beauty with Us</span></h2>
                                 </div>
                                 <div className="pink__photo">
-                                    <img src='assets/both.png' />
+                                    <img src={both} alt="both" />
                                 </div>
                             </div>
                         </div>
@@ -80,10 +84,10 @@ export default function LandingPage() {
                         <div className="container-slim">
                             <div className="girl__wrapper">
                                 <div className="girl__photo_main">
-                                    <img src='assets/girl.jpg' />
+                                    <img src={girl} alt="girl" />
                                 </div>
                                 <div className="girl__photo_secondary">
-                                    <img src='assets/lipstick.png' />
+                                    <img src={lipstick} alt="lipstick" />
                                 </div>
                                 <div className="girl__text">
                                     <h2>Unleash <span className="line-break">Your </span><span className="line-break">Radiance</span></h2>

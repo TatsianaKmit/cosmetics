@@ -1,5 +1,7 @@
 import React from 'react'
-import { TextInput, Button } from '@gravity-ui/uikit'
+import { TextInput, Button } from '@gravity-ui/uikit';
+import contact_small from '../assets/contact_small.jpg';
+import contact_big from '../assets/contact_big.jpg';
 
 export default function ContactPage() {
     return (
@@ -20,9 +22,9 @@ export default function ContactPage() {
                     </div>
                     <div className='form__photo'>
                         <picture>
-                            <source media="(max-width: 768px)" srcSet='./assets/contact_small.jpg' />
-                            <source media="(min-width: 767px)" srcSet='./assets/contact_big.jpg' />
-                            <img src='./assets/contact_big.jpg' />
+                            <source media="(max-width: 768px)" srcSet={contact_small} alt='contact' />
+                            <source media="(min-width: 767px)" srcSet={contact_big} alt='contact' />
+                            <img src={contact_big} alt='contact' />
                         </picture>
                     </div>
                 </div>
