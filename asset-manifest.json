@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/cosmetics/static/css/main.f4eff326.css",
+    "main.js": "/cosmetics/static/js/main.0e0de09b.js",
+    "static/media/landing.jpg": "/cosmetics/static/media/landing.54a3cccf8027c269a23f.jpg",
+    "static/media/Both.png": "/cosmetics/static/media/Both.85cbb8bd76ffe2ea23b9.png",
+    "static/media/lipstick.png": "/cosmetics/static/media/lipstick.f48ac64165831ea9f28a.png",
+    "static/media/powder.jpg": "/cosmetics/static/media/powder.574798254258eabcacbf.jpg",
+    "static/media/about.jpg": "/cosmetics/static/media/about.af095d4b4cb33d13af31.jpg",
+    "static/media/contact_small.jpg": "/cosmetics/static/media/contact_small.59125eabc4c32971e0cf.jpg",
+    "static/media/logo.PNG": "/cosmetics/static/media/logo.de411850564625c4ce24.PNG",
+    "static/media/logo_icon.PNG": "/cosmetics/static/media/logo_icon.9d48dbc21008a1777d7b.PNG",
+    "static/media/girl.jpg": "/cosmetics/static/media/girl.33c6aa5a50cd3ca12979.jpg",
+    "static/media/contact_big.jpg": "/cosmetics/static/media/contact_big.e6e3e8b9099976db0246.jpg",
+    "static/media/logo_lipstick.PNG": "/cosmetics/static/media/logo_lipstick.65f35e94613f07845fd4.PNG",
+    "static/media/slick.svg": "/cosmetics/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/cosmetics/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/cosmetics/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/cosmetics/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/cosmetics/index.html",
+    "main.f4eff326.css.map": "/cosmetics/static/css/main.f4eff326.css.map",
+    "main.0e0de09b.js.map": "/cosmetics/static/js/main.0e0de09b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4eff326.css",
+    "static/js/main.0e0de09b.js"
+  ]
+}
